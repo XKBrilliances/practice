@@ -1,0 +1,14 @@
+{
+  "item.practicemod.sapphire": "蓝水晶",
+  "item.practicemod.raw_sapphire": "粗蓝水晶",
+
+  "creativetab.practice_tab": "物品类",
+  "creativetab.practice_tab_2": "方块类",
+
+  "block.practicemod.sapphire_block": "蓝水晶块",
+  "blcok.practicemod.raw_sapphire_block": "粗蓝水晶块",
+  "block.practicemod.sapphire_ore": "蓝水晶矿石",
+  "block.practicemod.nether_sapphire_ore": "下届蓝水晶矿石",
+  "block.practicemod.end_stone_sapphire_ore": "末地蓝水晶矿石",
+  "block.practicemod.deepslate_sapphire_ore": "深层蓝水晶矿石"
+}
