@@ -32,6 +32,7 @@ public class ModBlocks {
                     .of()
                     .strength(5.0f,6.0f) // 硬度和爆炸抗性
                     .sound(SoundType.AMETHYST)//紫水晶音效
+                    .requiresCorrectToolForDrops()
                     // 可添加更多属性：
                     // .strength(5.0f, 6.0f) // 硬度和爆炸抗性
                     // .requiresCorrectToolForDrops() // 需要正确工具采集
