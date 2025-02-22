@@ -5,7 +5,7 @@ import net.kaupenjoe.practicemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+
 
 /**
  * 适用于Minecraft 1.20.1 Forge的方块注册类
@@ -86,7 +87,7 @@ public class ModBlocks {
                     // 可添加更多属性：
                     // .strength(5.0f, 6.0f) // 硬度和爆炸抗性
                     // .requiresCorrectToolForDrops() // 需要正确工具采集
-            ));
+            ));;
 // 可扩展属性：
     // .stacksTo(64) // 堆叠数量
     // .rarity(Rarity.RARE) // 稀有度
