@@ -32,7 +32,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties// 1.20.1的BlockBehaviour.Properties配置链
                     .of()
                     .strength(5.0f,6.0f) // 硬度和爆炸抗性
-                    .sound(SoundType.AMETHYST)//紫水晶音效
+                    .sound(SoundType.NETHERITE_BLOCK)//紫水晶音效
                     .requiresCorrectToolForDrops()
                     // 可添加更多属性：
                     // .strength(5.0f, 6.0f) // 硬度和爆炸抗性
@@ -117,3 +117,22 @@ public class ModBlocks {
         BLOCKS.register(eventBus);
     }
 }
+
+/*
+音效类型	对应材质描述
+SoundType.STONE	石头类方块（圆石、矿石等）
+SoundType.WOOD	木质方块（木板、木制品等）
+SoundType.GRAVEL	沙砾类方块（沙砾、灵魂沙等）
+SoundType.GRASS	草方块、菌丝土等
+SoundType.METAL	金属方块（铁块、金块等）
+SoundType.WOOL	羊毛类方块
+SoundType.SAND	沙子类方块
+SoundType.SNOW	雪类方块（雪块、顶层雪）
+SoundType.LADDER	梯子
+SoundType.ANVIL	铁砧
+SoundType.SLIME	史莱姆块
+SoundType.HONEY	蜂蜜块
+SoundType.NETHERITE_BLOCK	下界合金块
+SoundType.NETHER_GOLD_ORE	下界金矿石
+SoundType.STEM	植物茎干（南瓜茎、西瓜茎等）
+SoundType.CHAIN	锁链*/

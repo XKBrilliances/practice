@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         // 添加模组物品
                         pOutput.accept(ModItems.SAPPHIRE.get());//蓝水晶
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());//粗蓝水晶矿
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());//铁矿检测器
 
                         // 添加原版物品作为示例
                         pOutput.accept(Items.DIAMOND);
