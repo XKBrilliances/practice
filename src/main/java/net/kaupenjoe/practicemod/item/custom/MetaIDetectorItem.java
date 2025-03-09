@@ -23,6 +23,13 @@ public class MetaIDetectorItem extends Item {
     // 当玩家右键点击方块时触发此方法
     public InteractionResult useOn(UseOnContext pContext) {
         // 仅在服务端执行逻辑（避免客户端重复处理）
+        //pContext名称
+        /*.getLevel()
+           获取当前所处的游戏世界（Level 对象），相当于获取当前维度/世界的实例
+         .isClientSide()
+           关键判断方法，返回 boolean 值：
+             true：当前在客户端（玩家视角所在的世界）
+             false：当前在服务端（游戏逻辑实际处理端）*/
         if (!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos(); // 获取点击的方块坐标
             Player player = pContext.getPlayer(); // 获取使用物品的玩家
@@ -43,7 +50,7 @@ public class MetaIDetectorItem extends Item {
 
             // 未找到目标方块时提示玩家
             if (!foundBlock) {
-                player.sendSystemMessage(Component.literal("未找到方块!"));
+                player.sendSystemMessage(Component.literal("未找到方块"));
             }
         }
 

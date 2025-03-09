@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());//蓝水晶
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());//粗蓝水晶矿
                         pOutput.accept(ModItems.METAL_DETECTOR.get());//铁矿检测器
+                        pOutput.accept(ModItems.BUFF_LTEM.get());//捏碎给buff
 
                         // 添加原版物品作为示例
                         pOutput.accept(Items.DIAMOND);
@@ -42,6 +43,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());//深层蓝水晶矿石
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());//末地蓝水晶矿石
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());//下届蓝水晶矿石
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());//自定义方块
                     })
                     .build());// 构建标签页实例
 

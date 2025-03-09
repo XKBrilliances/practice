@@ -1,6 +1,7 @@
 package net.kaupenjoe.practicemod.item;
 
 import net.kaupenjoe.practicemod.PracticeMod;
+import net.kaupenjoe.practicemod.item.custom.BuffItem;
 import net.kaupenjoe.practicemod.item.custom.MetaIDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -25,8 +26,13 @@ public class ModItems { // 注意：类名建议改为大驼峰式命名，如 M
                     .rarity(Rarity.RARE)));// 物品稀有度（颜色）
     //铁矿检测器
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
-            ()->new MetaIDetectorItem(new Item.Properties()//事件检测
+            ()->new MetaIDetectorItem(new Item.Properties()//事件检测挂载
                     .durability(100)));// 耐久度
+    //力量水晶
+    public static final RegistryObject<Item> BUFF_LTEM = ITEMS.register("buff_item",
+            ()-> new BuffItem(new Item.Properties()
+                    .stacksTo(1)));// 使用默认物品属性
+
 /*new Item.Properties()
     .stacksTo(64) // 创造中键堆叠数量
     .durability(100) // 耐久度

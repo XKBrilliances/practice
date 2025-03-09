@@ -1,6 +1,7 @@
 package net.kaupenjoe.practicemod.block;
 
 import net.kaupenjoe.practicemod.PracticeMod;
+import net.kaupenjoe.practicemod.block.custom.SoundBlock;
 import net.kaupenjoe.practicemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -87,8 +88,19 @@ public class ModBlocks {
                     // 可添加更多属性：
                     // .strength(5.0f, 6.0f) // 硬度和爆炸抗性
                     // .requiresCorrectToolForDrops() // 需要正确工具采集
-            ));;
+            ));
+    //自定义方块
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",// 注册名称（自动转为snake_case格式）
+            () -> new SoundBlock(BlockBehaviour.Properties// 1.20.1的BlockBehaviour.Properties配置链
+                    .of()
+                    .strength(5.0f,6.0f) // 硬度和爆炸抗性
+                    .sound(SoundType.AMETHYST)
+                    // 可添加更多属性：
+                    // .strength(5.0f, 6.0f) // 硬度和爆炸抗性
+                    // .requiresCorrectToolForDrops() // 需要正确工具采集
+            ));
 // 可扩展属性：
+    // .copy(Blocks.IRON_BLOCK)//继承铁矿属性
     // .stacksTo(64) // 堆叠数量
     // .rarity(Rarity.RARE) // 稀有度
     /**

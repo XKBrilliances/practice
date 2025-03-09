@@ -11,5 +11,6 @@
   "block.practicemod.sapphire_ore": "sapphire_ore",
   "block.practicemod.nether_sapphire_ore": "Nether Sapphire Ore",
   "block.practicemod.end_stone_sapphire_ore": "End Stone Sapphire Ore",
-  "block.practicemod.deepslate_sapphire_ore": "Deepslate Sapphire Ore"
+  "block.practicemod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.practicemod.sound_block": "Sound Block"
 }
